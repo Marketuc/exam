@@ -48,8 +48,6 @@ button {
 </style>
 </head>
 <body>
-        <h1>Edit Homeowner</h1>
-
         <form action="{{ route('homeowner.update', $homeowner->id) }}" method="POST">
             @csrf
             @method('PUT')

@@ -29,10 +29,31 @@
         tr:nth-child(even) {
             background-color: #f9f9f9;
         }
+        .button-group {
+         
+            margin-bottom: 20px;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        .back-btn {
+            background-color: #6c757d;
+            color: white;
+        }
+
+        .back-btn:hover {
+            background-color: #545b62;
+        }
+        button {
+            background-color: #6c757d;
+            color: white;
+        }
     </style>
 </head>
 <body>
     <h1>All Homeowners</h1>
+    <div class="button-group">
+    <a href="{{ route('welcome') }}" class="back-btn" style="text-align: center; padding: 12px; text-decoration: none; border-radius: 5px;">Back</a>
+    </div>
     <table border="1" cellpadding="10" cellspacing="0">
         <thead>
             <tr>

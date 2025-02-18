@@ -5,7 +5,7 @@ use App\Http\Controllers\HomeownerController;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('welcome');
 
 Route::get('/homeowner', [HomeownerController::class, 'index'])->name('homeowner.index');
 Route::get('/homeowner/create', [HomeownerController::class, 'create'])->name('homeowner.create');
